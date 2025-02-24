@@ -1,0 +1,37 @@
+<main class="home flex gap-2 flex-col justify-center items-center">
+  <section class="bg-slate-950 p-8 rounded-md" style="padding: 30px">
+    <h1 class="m-5 text-2xl font-bold text-white">
+      Descubra de qual anime é essa cena
+    </h1>
+    <section class="bg-slate-950 text-white m-2 rounded-lg p-5">
+      <input
+        type="file"
+        (change)="onFileSelected($event)" accept="image/*"
+        name="image"
+        class="file:mr-4 file:rounded-full file:border-0 file:bg-violet-50 file:px-4 file:py-2 file:text-sm file:font-semibold file:text-violet-700 hover:file:bg-violet-100 dark:file:bg-violet-600 dark:file:text-violet-100 dark:hover:file:bg-violet-500 ..."
+      />
+    </section>
+  </section>
+  <div class="flex justify-center w-full" style="margin-top: 10px">
+    <button
+      type="submit"
+      class="bg-violet-600 text-white rounded-2xl hover:bg-violet-500"
+      style="padding: 10px"
+      (click)="search()"
+    >
+      pesquisar
+    </button>
+  </div>
+  <div class="bg-slate-950 p-8 rounded-md text-white" style="padding: 30px" *ngIf="results">
+    <h2>Resultados:</h2>
+    <h4>Nome: {{results.result[0].filename}} </h4>
+    <h4>episodio: {{results.result[0].episode}} </h4>
+    <img [src]="results.result[0].image" alt="">
+
+    <video width="320" height="240" controls>
+      <source [src]="results.result[0].video" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+  </div>
+</main>
