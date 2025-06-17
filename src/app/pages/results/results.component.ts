@@ -16,21 +16,21 @@ export class ResultsComponent {
       this.dataTransferService = dataTransferService;
      }
   results: any;
-  formData: FormData = new FormData(); // Obtém o formData do serviço ou cria um novo vazio
-  isLoading: boolean = false; // Variável para controlar o estado de carregamento
+  formData: FormData = new FormData();
+  isLoading: boolean = false;
 
   ngAfterViewInit() {
-    this.isLoading = true; // Inicia o carregamento
-    this.formData = this.dataTransferService.getFormData() || new FormData(); // Obtém o formData do serviço ou cria um novo vazio
+    this.isLoading = true;
+    this.formData = this.dataTransferService.getFormData() || new FormData();
     this.searchService.searchAnime(this.formData).subscribe(
       (data) => {
         this.results = data.result;
         console.log(data);
-        this.isLoading = false; // Finaliza o carregamento
+        this.isLoading = false;
       },
-      (error) => {
+      (error: any) => {
         console.error(error);
-        this.isLoading = false; // Finaliza o carregamento mesmo em caso de erro
+        this.isLoading = false;
       }
     );
   }

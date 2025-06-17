@@ -1,13 +1,13 @@
-import { ActivatedRoute, Router } from '@angular/router';
-import { SearchService } from './../../services/search.service';
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormsModule, NgModel } from '@angular/forms';
-import { CommonModule, NgFor } from '@angular/common';
-import { DataTransferService } from './../../services/data-transfer.service'; // Novo serviço
+import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
+
+import { DataTransferService } from './../../services/data-transfer.service';
 
 @Component({
   selector: 'app-home',
-  imports: [FormsModule, CommonModule, NgFor],
+  imports: [FormsModule, CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
@@ -17,8 +17,7 @@ export class HomeComponent {
   selectedFile: File | null = null;
 
   constructor(
-    private searchService: SearchService,
-    private route: ActivatedRoute,
+
     private router: Router,
     private dataTransferService: DataTransferService // Injeta o serviço
   ) { }
@@ -32,12 +31,12 @@ export class HomeComponent {
       const formData = new FormData();
       formData.append('image', this.selectedFile);
 
-      // Armazena o formData no serviço
+
       this.dataTransferService.setFormData(formData);
 
       localStorage.setItem('formData', JSON.stringify(formData));
 
-      // Navega para a rota de resultados
+
       this.router.navigate(['/resultados']);
     }
   }
