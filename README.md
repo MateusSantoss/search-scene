@@ -1,59 +1,112 @@
-# SearchScene
+# 🧭 SearchScene  
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
+![Angular](https://img.shields.io/badge/Angular-19-DD0031?style=for-the-badge&logo=angular&logoColor=white)  
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)  
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)  
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-blue?style=for-the-badge)
 
-## Development server
+Aplicação web que permite **identificar o nome do anime, episódio e outras informações** a partir de uma **imagem ou cena específica**.  
 
-To start a local development server, run:
+---
+
+## 🧰 Tecnologias Utilizadas  
+
+<ul>
+  <li><strong>Angular 19</strong> – Framework principal para o desenvolvimento do front-end</li>
+  <li><strong>Tailwind CSS</strong> – Estilização moderna e responsiva</li>
+  <li><strong>Trace.moe API</strong> – Serviço usado para identificar animes a partir de imagens</li>
+</ul>
+
+---
+
+## 💡 Como Usar  
+
+Na página inicial, selecione a imagem desejada e clique em **Pesquisar**.  
+
+<p align="center">
+  <img src="./public/readmeImgs/home.png" alt="Página inicial do SearchScene" width="700px">
+</p>
+
+Em seguida, os resultados serão exibidos na página seguinte:  
+
+<p align="center">
+  <img src="./public/readmeImgs/resultados.png" alt="Página de resultados do SearchScene" width="700px">
+</p>
+
+> ⚠️ **Observação:** Os resultados podem não ser 100% precisos, pois dependem do reconhecimento feito pela API Trace.moe.
+
+
+
+## 🚀 Servidor de Desenvolvimento
+
+Para iniciar o servidor local de desenvolvimento, execute o comando:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Depois que o servidor estiver em execução, abra o navegador e acesse:
+👉 `http://localhost:4200/`
 
-## Code scaffolding
+O aplicativo será recarregado automaticamente sempre que você modificar algum dos arquivos de origem.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🧩 Geração de Código
+
+O Angular CLI oferece ferramentas práticas para criar componentes, diretivas, pipes e outros elementos do projeto.
+
+Para gerar um novo componente, use:
 
 ```bash
-ng generate component component-name
+ng generate component nome-do-componente
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Para ver a lista completa de *schematics* disponíveis:
 
 ```bash
 ng generate --help
 ```
 
-## Building
+## ⚙️ Compilando o Projeto
 
-To build the project run:
+Para compilar o projeto, execute:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Os arquivos compilados serão armazenados no diretório `dist/`.
+Por padrão, o modo de produção gera uma versão otimizada, focada em **desempenho e velocidade**.
 
-## Running unit tests
+## 🧪 Testes Unitários
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Para executar os testes unitários utilizando o [Karma](https://karma-runner.github.io):
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+## 🔍 Testes End-to-End (E2E)
 
-For end-to-end (e2e) testing, run:
+Para executar testes de ponta a ponta:
 
 ```bash
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+> ⚠️ O Angular CLI não inclui por padrão um framework E2E.
+> Você pode escolher e configurar o que preferir (por exemplo, Cypress ou Playwright).
 
-## Additional Resources
+## 📚 Recursos Adicionais
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Para saber mais sobre o Angular CLI e seus comandos, consulte a documentação oficial:
+🔗 [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli)
+
+
+## 👨‍💻 Créditos  
+
+Desenvolvido com 💙 por **[Mateus](https://github.com/MateusSantoss)**  
+📚 Estudante de **Tecnologia da Informação**, apaixonado por **programação** e **animes**.  
+
+Se este projeto te ajudou de alguma forma, não esqueça de deixar uma ⭐ no repositório e me seguir para acompanhar novas atualizações! 🚀
+
+
