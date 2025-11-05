@@ -1,7 +1,7 @@
 import { DataTransferService } from './../../services/data-transfer.service';
 import { Component } from '@angular/core';
 import { SearchService } from '../../services/search.service';
-import { ActivatedRoute } from '@angular/router';
+import {  Router } from '@angular/router';
 import { CommonModule, NgFor, NgIf } from '@angular/common';
 
 @Component({
@@ -11,7 +11,7 @@ import { CommonModule, NgFor, NgIf } from '@angular/common';
   styleUrl: './results.component.scss'
 })
 export class ResultsComponent {
-  constructor(private searchService: SearchService, private route: ActivatedRoute,
+  constructor(private searchService: SearchService, private route: Router,
     private dataTransferService: DataTransferService) {
       this.dataTransferService = dataTransferService;
      }
@@ -34,5 +34,7 @@ export class ResultsComponent {
       }
     );
   }
+
+
 
 }

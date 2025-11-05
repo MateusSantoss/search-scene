@@ -1,8 +1,7 @@
 <div *ngIf="isLoading" class="flex justify-center items-center h-screen">
   <img
     src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fzflipcoverscreengifs%2Fcomments%2F1gos4zy%2Fanime_gif_collection%2F%3Ftl%3Dpt-br&psig=AOvVaw3VfMq3RWXkSdYYOL5J166w&ust=1746753269198000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCOizmpPZko0DFQAAAAAdAAAAABAE"
-    alt="Carregando..."
-  />
+    alt="Carregando..." />
 </div>
 <section class="bg-slate-950 p-8 rounded-md text-white">
   <div style="padding: 30px" *ngIf="!isLoading && results">
@@ -11,34 +10,31 @@
     </div>
 
     <div class="flex flex-wrap gap-4 justify-center items-center">
-      <div
-        *ngFor="let result of results"
-        class="shadow-xl p-8 bg-white dark:bg-gray-800 rounded-lg max-w-sm"
-        style="padding: 10px"
-      >
+      <div *ngFor="let result of results" class="shadow-xl p-8 bg-gray-800 rounded-lg max-w-sm"
+        style="padding: 10px">
         <div class="flex justify-center items-center">
           <img [src]="result.image" alt="" class="p-8 rounded-t-lg" />
         </div>
 
         <div class="px-5 pb-5">
           <a href="#">
-            <h5
-              class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
-            >
+            <h5 class="text-xl font-semibold tracking-tight text-white">
               Nome: {{ result.filename }}
             </h5>
 
-            <h5
-              class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
-            >
+            <h5 class="text-xl font-semibold tracking-tight text-white">
               Episódio: {{ result.episode }}
             </h5>
           </a>
           <div class="flex items-center mt-2.5 mb-5">
             <div class="flex items-center space-x-1 rtl:space-x-reverse">
-              similaridade: {{ result.similarity | number : "1.0-2" }}
+              Tenho: {{ (result.similarity * 100) | number : "1.0-0" }} % de certeza que é esse o anime que você procura!
             </div>
+
+
           </div>
+
+
         </div>
       </div>
     </div>

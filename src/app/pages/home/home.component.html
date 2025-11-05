@@ -3,20 +3,19 @@
     <h1 class="m-5 text-2xl font-bold text-white">
       Descubra de qual anime é essa cena
     </h1>
-    <div class="text-white mb-2 p-2">
+    <div class="text-white mb-5 p-2" style="margin-bottom: 10px;">
       <h3 class="font-bold mt-2">Instruções de uso: </h3>
       <ul>
         <li>Selecione uma imagem nítida</li>
         <li>A imagem deve ser de uma cena oficial do anime (Não funciona com fanarts)</li>
-        <li>A Aplicação está em fase inicial de desenvolvimento e pode não funcionar corretamente</li>
       </ul>
     </div>
-    <section class="bg-slate-950 text-white m-2 mt-2 rounded-lg p-5">
+    <section class="bg-slate-950 text-white m-2 mt-4 rounded-lg p-5 mb-3">
       <input type="file" (change)="onFileSelected($event)" accept="image/*" name="image"
-        class="file:mr-4 file:rounded-full file:border-0 file:bg-violet-50 file:px-4 file:py-2 file:text-sm file:font-semibold file:text-violet-700 hover:file:bg-violet-100 dark:file:bg-violet-600 dark:file:text-violet-100 dark:hover:file:bg-violet-500 ..." />
+        class="file:mr-4 file:rounded-full file:border-0 file:bg-violet-50 file:px-4 file:py-2 mt-3 file:text-sm file:font-semibold file:text-violet-700 hover:file:bg-violet-100 dark:file:bg-violet-600 dark:file:text-violet-100 dark:hover:file:bg-violet-500 ..." />
     </section>
 
-    <div class="flex justify-center w-full" style="margin-top: 10px">
+    <div class="flex justify-center w-full" style="margin-top: 20px">
       <button type="submit" class="bg-violet-600 text-white rounded-2xl hover:bg-violet-500" style="padding: 10px"
         (click)="search()">
         pesquisar
@@ -30,21 +29,20 @@
   <div class="text-white" style="margin-bottom: 10px; padding-top: 10px;">
     <ul class="nav flex gap-2 justify-center">
       <li class="bg-violet text-violet">
-        <a href="https://www.instagram.com/mateuss5150/" style="color: blueviolet;">Instagram pessoal</a>
+        <a href="https://www.instagram.com/mateuss5150/" style="color: blueviolet;">Instagram pessoal</a> |
       </li>
 
-      <li>
-        <a href="https://www.tiktok.com/@imperio.dosanimes?_t=ZM-8xI8UZMpn1S&_r=1" style="color: blueviolet;">TikTok Império dos animes</a>
+      <li class="bg-violet text-violet">
+        <a href="https://www.linkedin.com/in/mateussantos-dev/" style="color: blueviolet;">LinkedIn</a> |
       </li>
 
-      <li>
-        <a href="https://www.instagram.com/imperio.dosanimes/profilecard/?igsh=NnhteGYzdHE2a2Z5" style="color: blueviolet;">Instagram Império dos animes</a>
-      </li>
-
-      <li>
-        <a href="https://k.kwai.com/u/@IMPERIODOSANIMES/oAok0SC6" style="color: blueviolet;">Kwai Império dos animes</a>
+      <li class="bg-violet text-violet">
+        <a href="https://github.com/MateusSantoss" style="color: blueviolet;">GitHub</a>
       </li>
     </ul>
+
+
+
 
   </div>
 
