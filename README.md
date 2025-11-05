@@ -2,7 +2,6 @@
 
 ![Angular](https://img.shields.io/badge/Angular-19-DD0031?style=for-the-badge&logo=angular&logoColor=white)  
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)  
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)  
 ![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-blue?style=for-the-badge)
 
 Aplicação web que permite **identificar o nome do anime, episódio e outras informações** a partir de uma **imagem ou cena específica**.  
